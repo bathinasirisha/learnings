@@ -1,4 +1,4 @@
-sudo su - jenkins                                      ##to swtich to another user
+sudo su - jenkins                                      ##to switch to another user
 yum update -y                                          ##to update software to latest##
 useradd sirisha                                        ##to create a user##
 passwd sirisha                                         ##to create a password for user##
