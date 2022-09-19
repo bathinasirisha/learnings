@@ -1,15 +1,13 @@
-yum update -y                                         ##to update software to latest##
-useradd sirisha                                       ##to create a user##
-passwd sirisha                                        ##to create a password for user##
-
+yum update -y                                          ##to update software to latest##
+useradd sirisha                                        ##to create a user##
+passwd sirisha                                         ##to create a password for user##
 visudo                                                 ##to modify sudo file to give access to user
 sirisha    ALL=(ALL)       ALL                         ## Allow root to run any commands anywhere
 sirisha    ALL=(ALL)       NOPASSWD: ALL               ## Same thing without a password
-
-vi /etc/ssh/sshd_config                               ##login user settings##
+vi /etc/ssh/sshd_config                                ##login user settings##
 PermitRootLogin yes
 PasswordAuthentication yes
-
-sudo systemctl restart sshd                           ##after changing in sshd_config  we should restart sshd service##
-
-
+sudo systemctl restart sshd                            ##after changing in sshd_config  we should restart sshd service##
+netstat -tulpn                                         ##to check which ports are in use(Tcp,Udp,Listening,port numbers)
+ps -ef                                                 ##Tocheck the process currently running
+top                                                    ##To check the memory and cpu utilization of the process running in the server
