@@ -1,0 +1,20 @@
+vi Dockerfile                                       ##to create a docker file
+# This is the base image we will use to create our custom docker image
+FROM ubuntu:latest
+# the maintainer of an image
+LABEL maintainer="name@company.com"
+# Install the tools (sudo)
+RUN apt-get update && apt-get upgrade -y && apt install sudo tasksel -y
+
+sudo docker build -t image-name:tag .               ##to create a docker image
+docker images                                       ##to check docker images
+##docker rmi imageid                                ##to remove a docker image
+docker run -d imageid                               ##to create a docker container which is in a not running state
+docker ps                                           ##it will show current running containers
+docker ps -a                                        ##it will show stopped containers as well
+docker start containerid                            ##to start a stopped container
+##docker stop containerid                           ## to stop a running container
+##docker rm containerid                             ##to delete a container
+sudo docker run -i -t imageid /bin/bash             ##to create docker container which is in running state
+docker exec -it containerid /bin/bash/              ##to enter into docker container from linux machine
+
