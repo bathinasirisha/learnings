@@ -1,8 +1,8 @@
 #docker pull docker.elastic.co/elasticsearch/elasticsearch:7.9.0              ##pull the image from registry
 docker info                                                                  ## gives information about the docker setup on your machine/vm
 
-sudo docker build -t image-name:tag .                   ##to create a docker image
-#docker images                                          ##to check docker images
+sudo docker build -t image-name:tag .                   ##to create a docker image from dockerfile
+docker images                                          ##to check docker images
 # ##docker rmi imageid                                  ##to remove a docker image
 docker run -d imageid                                   ##to create a docker container which is running in background(daemon -d)
 #docker ps                                              ##it will show current running containers
@@ -12,7 +12,7 @@ docker run -d imageid                                   ##to create a docker con
 ##docker rm containerid                                  ##to delete a container
 #docker run --name nginx -d -p 8080:80 nginx             ##to run ngnix webserver on port 8080
 #sudo docker run -i -t imageid /bin/bash                 ##to create docker container which is in running state
-#docker exec -it containerid /bin/bash/                  ##to enter into docker container from linux machine
+#docker exec -it containerid /bin/bash                 ##to enter into docker container from linux machine
 #docker rename big_hamilton big_hamilton_v1              ## remane docker containerdocker rename big_hamilton big_hamilton_v1 <-- remane docker container
 #docker logs CONTAINER_NAME                              ## get a list of commands executed in the container.
 #docker cp containerId:/filename.html ./                 ##to copy from container to localmachine  
