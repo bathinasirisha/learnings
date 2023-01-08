@@ -1,4 +1,3 @@
-sudo su - jenkins                                      ##to switch to another user
 yum update -y                                          ##to update software to latest##
 useradd sirisha                                        ##to create a user##
 passwd sirisha                                         ##to create a password for user##
@@ -12,6 +11,13 @@ vi /etc/ssh/sshd_config                                ##login user settings##
     ClientAliveInterval 120                                ##not to logout the session of the server
 systemctl restart sshd                                 ##after changing in sshd_config  we should restart sshd service##
 
+ssh-keygen                                             ## to generate id_rsa pub&privatekeys
+ssh-copy-id username@IPAddress                         ## to copy pubkey from source server(.ssh folder) to destination server
+
+ssh -i /var/lib/jenkins/workspace/id_rsa -oStrictHostKeyChecking=no siri@10.128.0.4 rm -rf /usr/share/nginx/html/index.html
+scp -r -i /var/lib/jenkins/workspace/id_rsa index.html siri@10.128.0.4:/usr/share/nginx/html/
+
+sudo su - jenkins                                      ##to switch to another user
 systemctl status jenkins                               ##to check the service is running or not
 systemctl enable jenkins                               ##to start the service when server restart or start
 ssh -i identitykey username@IPAddress                  ##to connect from one server to another server
@@ -19,6 +25,3 @@ scp -i .ssh/id_rsa dir1.zip username@IPadress:~/       ## to copy file from ones
 netstat -tulpn                                         ##to check which ports are in use(Tcp,Udp,Listening,port numbers)
 ps -ef                                                 ##To check the process currently running
 top                                                    ##To check the memory and cpu utilization of the process running in the server
-ssh-keygen                                             ## to generate id_rsa pub&privatekeys
-ssh-copy-id username@IPAddress                         ## to copy pubkey from source server(.ssh folder) to destination server
-
