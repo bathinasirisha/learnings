@@ -3,13 +3,15 @@ yum update -y                                          ##to update software to l
 useradd sirisha                                        ##to create a user##
 passwd sirisha                                         ##to create a password for user##
 visudo                                                 ##to modify sudo file to give access to user
-sirisha    ALL=(ALL)       ALL                         ## Allow root to run any commands anywhere
-sirisha    ALL=(ALL)       NOPASSWD: ALL               ## Same thing without a password
+    sirisha    ALL=(ALL)       ALL                         ## Allow root to run any commands anywhere
+    sirisha    ALL=(ALL)       NOPASSWD: ALL               ## Same thing without a password
+    
 vi /etc/ssh/sshd_config                                ##login user settings##
-PermitRootLogin yes
-PasswordAuthentication yes
-ClientAliveInterval 120                                ##not to logout the session of the server
+    PermitRootLogin yes
+    PasswordAuthentication yes
+    ClientAliveInterval 120                                ##not to logout the session of the server
 systemctl restart sshd                                 ##after changing in sshd_config  we should restart sshd service##
+
 systemctl status jenkins                               ##to check the service is running or not
 systemctl enable jenkins                               ##to start the service when server restart or start
 ssh -i identitykey username@IPAddress                  ##to connect from one server to another server
