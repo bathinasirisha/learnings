@@ -17,6 +17,10 @@ ssh-copy-id username@IPAddress                         ## to copy pubkey from so
 ssh -i /var/lib/jenkins/workspace/id_rsa -oStrictHostKeyChecking=no siri@10.128.0.4 rm -rf /usr/share/nginx/html/index.html
 scp -r -i /var/lib/jenkins/workspace/id_rsa index.html siri@10.128.0.4:/usr/share/nginx/html/
 
+export                                                ##only ontil system restart
+.bashrc : if you want the variable to be only for the current user logged-in;
+/etc/environment : if you want the variable to be shared by all the users on the system.
+
 sudo su - jenkins                                      ##to switch to another user
 systemctl status jenkins                               ##to check the service is running or not
 systemctl enable jenkins                               ##to start the service when server restart or start
