@@ -1,0 +1,11 @@
+sudo docker run -it --rm -d -p 8080:80 --name anyname docker-demo:latest     ###8080[inbrouser]:80[localport]
+
+
+
+
+
+
+
+
+
+sudo docker pull sirishabathina/nginx:latest
