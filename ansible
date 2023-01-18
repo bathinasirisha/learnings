@@ -1,0 +1,3 @@
+sudo yum install ansible
+ansible --version
+ansible-galaxy init nginx     ===================>to create a playbook
