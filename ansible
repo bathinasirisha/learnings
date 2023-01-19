@@ -8,3 +8,35 @@ $ ansible-playbook setup.yml
 
 sudo vi /etc/ansible/hosts  =====================>ansible inventory to add ip address of servers
 ansible-playbook setup.yml  =====================>to run playbook
+
+
+
+
+
+
+
+[siri@docker ansible]$ sudo ansible-galaxy init service
+- Role service was created successfully
+[siri@docker ansible]$ ls
+copy  nginx  service  setup.yml
+[siri@docker ansible]$ cd se
+service/   setup.yml
+[siri@docker ansible]$ cd service/
+[siri@docker service]$ ls
+defaults  files  handlers  meta  README.md  tasks  templates  tests  vars
+[siri@docker service]$ cd tasks/
+[siri@docker tasks]$ ls
+main.yml
+[siri@docker tasks]$ sudo vi main.yml
+[siri@docker tasks]$ sudo vi main.yml
+[siri@docker tasks]$ cd ..
+[siri@docker service]$ ls
+defaults  files  handlers  meta  README.md  tasks  templates  tests  vars
+[siri@docker service]$ cd ..
+[siri@docker ansible]$ ls
+copy  nginx  service  setup.yml
+[siri@docker ansible]$ sudo vi setup.yml
+[siri@docker ansible]$ sudo vi /etc/ansible/hosts
+[siri@docker ansible]$ pwd
+/home/siri/ansible
+[siri@docker ansible]$  ansible-playbook setup.yml
