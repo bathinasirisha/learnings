@@ -8,6 +8,7 @@ $ ansible-playbook setup.yml
 
 sudo vi /etc/ansible/hosts  =====================>ansible inventory to add ip address of servers
 ansible-playbook setup.yml  =====================>to run playbook
+
 setup.yml code=====
 
 - hosts: client1
@@ -47,6 +48,20 @@ defaults  files  handlers  meta  README.md  tasks  templates  tests  vars
 [siri@docker tasks]$ ls
 main.yml
 [siri@docker tasks]$ sudo vi main.yml
+---
+- name: siri
+  yum:
+    name:
+      - nginx
+    state: latest
+    lock_timeout: 180
+- name: To start services
+  service:
+    name: "{{ item }}"
+    state: started
+    enabled: yes
+  with_items:
+    - nginx
 [siri@docker tasks]$ sudo vi main.yml
 [siri@docker tasks]$ cd ..
 [siri@docker service]$ ls
@@ -55,6 +70,12 @@ defaults  files  handlers  meta  README.md  tasks  templates  tests  vars
 [siri@docker ansible]$ ls
 copy  nginx  service  setup.yml
 [siri@docker ansible]$ sudo vi setup.yml
+hosts: web
+  remote_user: siri
+  become: yes
+  become_method: sudo
+  roles:
+    - nginx
 [siri@docker ansible]$ sudo vi /etc/ansible/hosts
 [siri@docker ansible]$ pwd
 /home/siri/ansible
