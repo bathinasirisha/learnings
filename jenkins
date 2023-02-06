@@ -1,0 +1,10 @@
+sudo yum install java-11-openjdk-devel
+ java -version
+readlink -f $(which java)
+ export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.18.0.10-1.el7_9.x86_64
+ export PATH=$JAVA_HOME/bin:$PATH
+  echo $PATH
+/usr/lib/jvm/java-11-openjdk-11.0.18.0.10-1.el7_9.x86_64/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/siri/.local/bin:/home/siri/bin
+sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+ sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+ sudo yum install jenkins
