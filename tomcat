@@ -19,8 +19,15 @@ sudo find / -name context.xml  ======
 /opt/tomcat/apache-tomcat-8.5.85/webapps/host-manager/META-INF/context.xml
 /opt/tomcat/apache-tomcat-8.5.85/webapps/manager/META-INF/context.xml
 vi /opt/tomcat/apache-tomcat-8.5.85/webapps/manager/META-INF/context.xml
+
 uncmomment those lines
 <!--  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
          allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
+         
+         cd conf/
+         vi tomcat-users.xml
+          add username &passwf files then shutdown and start
+         
+         
 
  
