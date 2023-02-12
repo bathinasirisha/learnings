@@ -1,0 +1,26 @@
+mkdir /opt/tomcat
+ cd /opt/tomcat
+ wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.85/bin/apache-tomcat-8.5.85.tar.gz
+ gunzip apache-tomcat-8.5.85.tar.gz
+ tar -xvf apache-tomcat-8.5.85.tar
+ cd apache-tomcat-8.5.85/bin
+ ls
+ chown -R siri:siri apache-tomcat-8.5.85      =====> to give owner permissions
+  ./startup.sh  ====== >to start the tomcat
+ ./shutdown.sh  ====== >to stop the tomcat
+ 
+ sudo ln -s /opt/tomcat/apache-tomcat-8.5.85/bin/startup.sh /usr/sbin/tomcatup
+[siri@jenkins bin]$ sudo ln -s /opt/tomcat/apache-tomcat-8.5.85/bin/shutdown.sh /usr/sbin/tomcatdown
+[siri@jenkins bin]$ sudo tomcatup
+
+sudo find / -name context.xml  ======
+/opt/tomcat/apache-tomcat-8.5.85/conf/context.xml
+/opt/tomcat/apache-tomcat-8.5.85/webapps/examples/META-INF/context.xml
+/opt/tomcat/apache-tomcat-8.5.85/webapps/host-manager/META-INF/context.xml
+/opt/tomcat/apache-tomcat-8.5.85/webapps/manager/META-INF/context.xml
+vi /opt/tomcat/apache-tomcat-8.5.85/webapps/manager/META-INF/context.xml
+uncmomment those lines
+<!--  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
+         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
+
+ 
