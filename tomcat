@@ -27,6 +27,10 @@ uncmomment those lines
          cd conf/
          vi tomcat-users.xml
           add username &passwf files then shutdown and start
+          In case of change port number in
+          cd conf/
+          vim server.xml ===>change connector port number and restart again
+          
          
          
 
