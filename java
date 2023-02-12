@@ -5,9 +5,12 @@ readlink -f $(which java) ====>To check where java installed in centos
  export PATH=$JAVA_HOME/bin:$PATH
   echo $PATH
 
+MAVEN
+To install maven by using
 wget https://dlcdn.apache.org/maven/maven-3/3.9.0/binaries/apache-maven-3.9.0-bin.tar.gz
  tar -xfv apache-maven-3.9.0-bin.tar.gz
  mv apache-maven-3.9.0 /usr/share/maven
+ mvn -version
  
   echo $PATH
 /usr/lib/jvm/java-11-openjdk-11.0.18.0.10-1.el7_9.x86_64/bin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/share/maven/bin
