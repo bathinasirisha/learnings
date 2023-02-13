@@ -11,9 +11,26 @@ wget https://dlcdn.apache.org/maven/maven-3/3.9.0/binaries/apache-maven-3.9.0-bi
  tar -xfv apache-maven-3.9.0-bin.tar.gz
  mv apache-maven-3.9.0 /usr/share/maven
  mvn -version
+ [siri@jenkins ~]$ which java
+/usr/lib/jvm/java-11-openjdk-11.0.18.0.10-1.el7_9.x86_64/bin/java
+[siri@jenkins ~]$ whereis java
+java: /usr/bin/java /usr/lib/java /etc/java /usr/share/java /usr/lib/jvm/java-11-openjdk-11.0.18.0.10-1.el7_9.x86_64/bin/java /usr/share/man/man1/java.1.gz
+[siri@jenkins ~]$ echo $PATH
+/usr/lib/jvm/java-11-openjdk-11.0.18.0.10-1.el7_9.x86_64/bin:/usr/lib/jvm/java-11-openjdk-11.0.18.0.10-1.el7_9.x86_64/bin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/share/maven/bin
+[siri@jenkins ~]$ echo $JAVA_HOME
+/usr/lib/jvm/java-11-openjdk-11.0.18.0.10-1.el7_9.x86_64
+[siri@jenkins ~]$ which maven
+/usr/bin/which: no maven in (/usr/lib/jvm/java-11-openjdk-11.0.18.0.10-1.el7_9.x86_64/bin:/usr/lib/jvm/java-11-openjdk-11.0.18.0.10-1.el7_9.x86_64/bin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/share/maven/bin)
+[siri@jenkins ~]$ ls
+apache-maven-3.9.0-bin.tar.gz  apache-maven-3.9.0-bin.tar.gz.1
+[siri@jenkins ~]$ sudo rm -rf /usr/share/maven
+[siri@jenkins ~]$ tar -xvf apache-maven-3.9.0-bin.tar.gz
+[siri@jenkins ~]$ ls
+apache-maven-3.9.0  apache-maven-3.9.0-bin.tar.gz  apache-maven-3.9.0-bin.tar.gz.1
+[siri@jenkins ~]$ sudo cp -r apache-maven-3.9.0 /usr/share/maven
+[siri@jenkins ~]$ mvn -v
  
-  echo $PATH
-/usr/lib/jvm/java-11-openjdk-11.0.18.0.10-1.el7_9.x86_64/bin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/share/maven/bin
+  echo $PATH=/usr/lib/jvm/java-11-openjdk-11.0.18.0.10-1.el7_9.x86_64/bin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/share/maven/bin
 
 cat .bash_profile ====>file
   # .bash_profile
