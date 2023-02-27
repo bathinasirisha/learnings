@@ -1,3 +1,4 @@
+Installation
 sudo yum install ansible
 ansible --version    ===================>to create a playbook
 Create ansible role 
@@ -5,6 +6,7 @@ $ mkdir webap-playbook
 $ cd webap-playbook
 $ ansible-galaxy init webap
 $ ansible-playbook setup.yml
+
 
 sudo vi /etc/ansible/hosts  =====================>ansible inventory to add ip address of servers
 ansible-playbook setup.yml  =====================>to run playbook
