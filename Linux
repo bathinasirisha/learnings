@@ -23,8 +23,9 @@ alias      set an alias
  blue dir 
  white normal
  ls         list out all files and directories in current working directory
- ls -l     long listing   ls -f  to display colors
- ls -F
+ ls -l     long listing  
+ ls -f  to disable colors
+ ls -F   to display colors
  
  ls -t modification time                                     (order not important)
  ls -r  reverse of alphabetical(oldest first)
