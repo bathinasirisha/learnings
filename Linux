@@ -24,6 +24,7 @@ alias      set an alias
  ls -l /etc | tail -5 last  5 lines  (| means  piping)
  ls -l /etc | more    tab key to go to next page (page by page) display only forward diectionm           d==> next page,b===>previous page
  ls -l /etc | less      page by page but  both directories   less more important than more
+ ls -l /etc | head -15 | tail -5 together we can use
  logname    display login name
  mkdir      make a directory                                                    
  man        display manual page                                                 
