@@ -7,8 +7,23 @@ alias      set an alias
  cp         copy files or directories                                           
  date       display date and time (non-standard opt. "-u" for UTC)              
  echo       write arguments back                                                
- halt       halt system, shut down                                              
- ls         list directory                                                      
+ halt       halt system, shut down 
+ green -excutable
+ blue dir 
+ white normal
+ ls         list out all files and directories in current working directory
+ ls -l     long listing  
+ ls -a  all
+ ls -f  to display colors
+ ls -F
+ ls -t modification time                                     (order not important)
+ ls -r  reverse of alphabetical(oldest first)
+ ls -R recursively
+ ls -l /etc all files and directiores in etc directory
+ ls -l /etc | head -5 only top 5 lines we get
+ ls -l /etc | tail -5 last  5 lines  (| means  piping)
+ ls -l /etc | more    tab key to go to next page (page by page) display only forward diectionm           d==> next page,b===>previous page
+ ls -l /etc | less      page by page but  both directories   less more important than more
  logname    display login name
  mkdir      make a directory                                                    
  man        display manual page                                                 
