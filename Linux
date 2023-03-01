@@ -5,17 +5,27 @@ alias      set an alias
  chmod      change file permissions                                             
  cd         change current working directory                                    
  cp         copy files or directories                                           
- date       display date and time (non-standard opt. "-u" for UTC)              
+ date       display date and time (non-standard opt. "-u" for UTC)
+ date +%D  to display date not time
+ date +%T to display onlytime
+ date +%Y 2020 yyyyformat
+ 
+ date +% d ====>to display date not time ==>23
+ date +%t     =====>to display onlytime
+ date +%y ====>20  yy format
+ date +%m ===>04
+ date +%d/%m/%Y =====>23/04/2020
+ date +%Y-%m-%d ====>2020-04-23 different format
+ 
  echo       write arguments back                                                
  halt       halt system, shut down 
  green -excutable
  blue dir 
  white normal
  ls         list out all files and directories in current working directory
- ls -l     long listing  
- ls -a  all
- ls -f  to display colors
+ ls -l     long listing   ls -f  to display colors
  ls -F
+ 
  ls -t modification time                                     (order not important)
  ls -r  reverse of alphabetical(oldest first)
  ls -R recursively
