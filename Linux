@@ -4,6 +4,8 @@ alias      set an alias
  cat        concatenate files
  cat > abc.txt ===>old data willbe overriden
  cat >> abc.txt  ===>old data will append
+ cat -b ===>numbering will given 
+ cat -n abc.txt ======blank lines
  chmod      change file permissions                                             
  cd         change current working directory                                    
  cp         copy files or directories                                           
@@ -28,7 +30,6 @@ alias      set an alias
  ls -l     long listing  
  ls -f  to disable colors
  ls -F   to display colors
- 
  ls -t modification time                                     (order not important)
  ls -r  reverse of alphabetical(oldest first)
  ls -R recursively
@@ -38,6 +39,7 @@ alias      set an alias
  ls -l /etc | more    tab key to go to next page (page by page) display only forward diectionm           d==> next page,b===>previous page
  ls -l /etc | less      page by page but  both directories   less more important than more
  ls -l /etc | head -15 | tail -5 together we can use
+ 
  logname    display login name
  mkdir      make a directory 
  mkdir{1..10}    =======>10 directories will be created
@@ -65,9 +67,7 @@ alias      set an alias
  unset      discard a variable                                                  
  vi         visual editor (simple vi)                                           
  view       vi in view mode                                                     
- wc         word count
- Currently implemented non-standard commands                                     
-                                                                                
+ wc         word count                                  
  browse     open a new browser window with specified url (or site-homepage)     
  clear      clear and reset the display                                         
  features   display features of the virtual OS and the terminal                 
@@ -75,7 +75,20 @@ alias      set an alias
  fimport    re-import of backuped home-data for intersession operability.       
  hallo      display a short system-identification                               
  hello      display a short system-identification                               
- help       display this help table                                             
+ help       display this help table 
+ 
+ head abc.txt =====will display only 10 lines by default
+ (head -n  5 abc.txt)
+ head -5 abc.txt ======>top 5 lines will be display
+ head -n 5 abc.txt =====it will  display all  lines from top ....except last 5 lines
+ head -c 3 abc.txt   ======we will get first 3 characters we can get
+ 
+ tail ====to view fewlines from bottom of the file
+ tail abc.txt ===it will display last10 lines
+ tail -n 5 abc.txt or (tail -5 abc.txt) =====last 5lines we can get
+ tail  -c 10 abc.txt ====last 10 characters we can get
+ tail -n -5 abc.txt  last 5  lines it will display 
+ 
  info       display site-information                                            
  invaders   the "space invaders" arcade game for JS/UIX                         
  js         javascript debugging                                                
