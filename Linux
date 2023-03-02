@@ -40,6 +40,8 @@ alias      set an alias
  mkdir      make a directory 
  mkdir{1..10}    =======>10 directories will be created
  touch dir{1..10}/{a..d}.txt =====>in every directory 4 files will be created
+ mkdir -p hero/{siri,harshu,ashu,aadya}/{JAN,FEB,MAR,APR,MAY,JUN,JUL,AUG,SEP,OCT,NOV,DEC}_{2020,2021,2022}
+ 
  man        display manual page                                                 
  more       pager                                                               
  mv         move/rename files or directories                                    
@@ -55,7 +57,7 @@ alias      set an alias
  sh         start a new sub-shell                                               
  stty       set terminal attributes                                             
  su         switch user                                                         
- touch      set the timestamp of file or create empty file                      
+ touch      set the timestamp of file or create empty file                      aṭ
  uname      display system name                                                 
  unalias    discard an alias                                                    
  unset      discard a variable                                                  
