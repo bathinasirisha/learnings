@@ -37,7 +37,9 @@ alias      set an alias
  ls -l /etc | less      page by page but  both directories   less more important than more
  ls -l /etc | head -15 | tail -5 together we can use
  logname    display login name
- mkdir      make a directory                                                    
+ mkdir      make a directory 
+ mkdir{1..10}    =======>10 directories will be created
+ touch dir{1..10}/{a..d}.txt =====>in every directory 4 files will be created
  man        display manual page                                                 
  more       pager                                                               
  mv         move/rename files or directories                                    
