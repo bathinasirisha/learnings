@@ -88,6 +88,7 @@ alias      set an alias
  tail -n 5 abc.txt or (tail -5 abc.txt) =====last 5lines we can get
  tail  -c 10 abc.txt ====last 10 characters we can get
  tail -n -5 abc.txt  last 5  lines it will display 
+ head -7 abc.txt | tail -5      want from 3 line to 7th line
  
  info       display site-information                                            
  invaders   the "space invaders" arcade game for JS/UIX                         
