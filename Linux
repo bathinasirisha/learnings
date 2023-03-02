@@ -1,7 +1,9 @@
 alias      set an alias                                                        
  apropos    display a short description of a command                            
  cal        display a monthly calendar (non-standard opt. "-w" for weeks-count) 
- cat        concatenate files                                                   
+ cat        concatenate files
+ cat > abc.txt ===>old data willbe overriden
+ cat >> abc.txt  ===>old data will append
  chmod      change file permissions                                             
  cd         change current working directory                                    
  cp         copy files or directories                                           
@@ -40,7 +42,7 @@ alias      set an alias
  mkdir      make a directory 
  mkdir{1..10}    =======>10 directories will be created
  touch dir{1..10}/{a..d}.txt =====>in every directory 4 files will be created
- mkdir -p hero/{siri,harshu,ashu,aadya}/{JAN,FEB,MAR,APR,MAY,JUN,JUL,AUG,SEP,OCT,NOV,DEC}_{2020,2021,2022}
+ mkdir -p hero/{siri,harshu,ashu,aadya}/{JAN,FEB,MAR,APR,MAY,JUN,JUL,AUG,SEP,OCT,NOV,DEC}_{2020,2021,2022}/schedule_{1..31}.txt ====>in every directories files will be create
  
  man        display manual page                                                 
  more       pager                                                               
