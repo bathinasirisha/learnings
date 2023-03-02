@@ -56,7 +56,9 @@ alias      set an alias
  pwd        print working directory                                             
  reboot     reboot system                                                       
  rm         remove file(s)                                                      
- rmdir      remove a directory                                                  
+ rmdir      remove a directory 
+ rev        meant for horizontal reversal
+ tac        vertical reversal(it we want to perform vertical reverse i.e last line will become first line and  first line willbecome last line)  like ==perform >>mrofrep
  set        set a variable                                                      
  sh         start a new sub-shell                                               
  stty       set terminal attributes                                             
