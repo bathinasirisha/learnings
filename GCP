@@ -1,4 +1,5 @@
 To install gcsfuse 
 https://medium.com/gdgsrilanka/mounting-a-google-cloud-storage-bucket-into-centos-debian-even-behind-a-proxy-f4bf41af17d9
 
-
+ ADD Disk to VM =====>https://cloud.google.com/compute/docs/disks/detach-reattach-boot-disk 
+ Deattach disk =======>https://cloud.google.com/compute/docs/disks/detach-reattach-boot-disk
