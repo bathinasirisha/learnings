@@ -1,0 +1,29 @@
+To create VM by using this 
+provider "google" {
+    project     ="kubernetes-382110"
+    credentials =file("kubernetes-382110-506ce1526224.json")
+    region      = "us-central1"
+    zone        ="us-central1-a"
+
+}
+
+resource "google_compute_instance" "my_instance" {
+  name         = "terraform-instance"
+  machine_type = "e2-micro"
+  zone        ="us-central1-a"
+  allow_stopping_for_update = true
+
+ boot_disk {
+    initialize_params {
+      image = "centos-7-v20230411"
+    }
+  }
+
+
+ network_interface {
+    network = "default"
+    access_config {
+    
+   }
+ }
+}
