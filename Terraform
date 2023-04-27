@@ -27,3 +27,30 @@ resource "google_compute_instance" "my_instance" {
    }
  }
 }
+To create VPC subnetworks
+
+network_interface {
+    network    = google_compute_network.terraform-network.self_link
+    subnetwork = google_compute_subnetwork.terraform-subnet.self_link
+    access_config {
+    
+   }
+ }
+}
+resource "google_compute_network" "terraform-network" {
+  name = "terraform-network"
+  auto_create_subnetworks = false
+  }
+  resource "google_compute_subnetwork" "terraform-subnet" {
+    name          = "terraform-subnet"
+    ip_cidr_range = "10.2.0.0/16"
+    region        = "us-central1"
+    network       = google_compute_network.terraform-network.id
+  }
+  to input varibles
+  
+  terraform plan -var="project=kubernetes-382110" -var="credentials=kubernetes-382110-506ce1526224.json"
+  to env variables 
+  
+  set TF_VAR_credentials=kubernetes-382110-506ce1526224.json
+  terraform plan -var="project=kubernetes-382110"
