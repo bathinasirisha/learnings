@@ -56,20 +56,22 @@ resource "google_compute_network" "terraform-network" {
   terraform plan -var="project=kubernetes-382110"
   
   List:collection type
-  variable my_list{
-  type=list(number)
-  description="This is variable which contains string"
-  default=[12,"34.5"]
-  }
-  Tuple: It is a structural type
+       variable my_list{
+       type=list(number)
+       description="This is variable which contains string"
+        default=[12,"34.5"]
+        }
+  
+  
+ Tuple: It is a structural type
   for tuple order is important 
-  variable my_tuple{
-  type=tuple(String,number,bool)
-  description="This is a correct tuple"
-  default=["Hello",12,true]
-    }
+        variable my_tuple{
+        type=tuple(String,number,bool)
+        description="This is a correct tuple"
+        default=["Hello",12,true]
+         }
     
-   Set: collection type
+ Set: collection type
     variable my_set{
   type=tuple(number)
   description="This is a correct tuple"
