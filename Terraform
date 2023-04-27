@@ -68,12 +68,14 @@ resource "google_compute_network" "terraform-network" {
   description="This is a correct tuple"
   default=["Hello",12,true]
     }
+    
    Set: collection type
     variable my_set{
   type=tuple(number)
   description="This is a correct tuple"
   default=[11,12,32]
  }
+ 
  Map and object: MAp=>collection type
  Map and object contains multiple values into single one
  Map contains same type elements
@@ -87,6 +89,11 @@ resource "google_compute_network" "terraform-network" {
  credentials="key.json"
  region="us-central1"
  }
+ 
+ 
+ object structural type
+ contains collection of different types
+ 
  variable my_object{
   type=object({
   name=string
@@ -100,5 +107,3 @@ resource "google_compute_network" "terraform-network" {
   zone=
   allow_stopping_for_update=true
  
- object structural type
- contains collection of different types
