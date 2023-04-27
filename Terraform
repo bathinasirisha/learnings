@@ -102,8 +102,12 @@ resource "google_compute_network" "terraform-network" {
   allow_stopping_for_update=bool
   })
   default={
-  name=
+  name="terraform-instance
   machine_type=e2-micro
-  zone=
+  zone="us-central1-1"
   allow_stopping_for_update=true
- 
+  }
+  validate{
+  condition=""
+  error_message=""
+ }
