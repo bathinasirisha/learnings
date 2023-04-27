@@ -54,3 +54,51 @@ resource "google_compute_network" "terraform-network" {
   
   set TF_VAR_credentials=kubernetes-382110-506ce1526224.json
   terraform plan -var="project=kubernetes-382110"
+  
+  List:collection type
+  variable my_list{
+  type=list(number)
+  description="This is variable which contains string"
+  default=[12,"34.5"]
+  }
+  Tuple: It is a structural type
+  for tuple order is important 
+  variable my_tuple{
+  type=tuple(String,number,bool)
+  description="This is a correct tuple"
+  default=["Hello",12,true]
+    }
+   Set: collection type
+    variable my_set{
+  type=tuple(number)
+  description="This is a correct tuple"
+  default=[11,12,32]
+ }
+ Map and object: MAp=>collection type
+ Map and object contains multiple values into single one
+ Map contains same type elements
+ type map(string)
+ ex:
+ variable mymap{
+ type=map(string)
+ description="providers"
+ default={
+ project="project_name"
+ credentials="key.json"
+ region="us-central1"
+ }
+ variable my_object{
+  type=object({
+  name=string
+  machine_type=string
+  zone=string
+  allow_stopping_for_update=bool
+  })
+  default={
+  name=
+  machine_type=e2-micro
+  zone=
+  allow_stopping_for_update=true
+ 
+ object structural type
+ contains collection of different types
