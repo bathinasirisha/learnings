@@ -1,0 +1,8 @@
+cloud functions ====>
+functionname 
+region
+trriger type:http
+Authentication: check the box next to Allow unauthenticated invocations
+Click Save.
+NEXT
+Cloudbuild=====>
