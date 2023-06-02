@@ -13,3 +13,6 @@ app engine====>
 https://cloud.google.com/appengine/docs/standard/python3/building-app/deploying-web-service
 https://www.youtube.com/watch?v=SKlZzLctmGc&t=850s&ab_channel=edureka%21
 clone>path loki veeli >gcloud app delpoy >console check versions and instances and services
+
+cloud sql create database> cloudshell >show databases,create database and add data into table in cloud sql replicas are there one server got issue another server will send requests 
+https://github.com/bathinasirisha/learnings/edit/master/GCP%20services
