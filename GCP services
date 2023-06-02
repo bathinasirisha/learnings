@@ -6,4 +6,10 @@ Authentication: check the box next to Allow unauthenticated invocations
 Click Save.
 NEXT
 Cloudbuild=====>
-GKE======>gitclone>docker build>dockerpush>to containerregistry>Clustercreate>deploy the containerregistryimage>and expose the port to 8080 then we can see the image in browser
+GKE======>
+
+gitclone>docker build>dockerpush>to containerregistry>Clustercreate>deploy the containerregistryimage>and expose the port to 8080 then we can see the image in browser
+app engine====>
+https://cloud.google.com/appengine/docs/standard/python3/building-app/deploying-web-service
+https://www.youtube.com/watch?v=SKlZzLctmGc&t=850s&ab_channel=edureka%21
+clone>path loki veeli >gcloud app delpoy >console check versions and instances and services
