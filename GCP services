@@ -6,7 +6,7 @@ Authentication: check the box next to Allow unauthenticated invocations
 Click Save.
 NEXT
 Cloudbuild=====>
-GKE======>
+GKE======>https://www.youtube.com/watch?v=jJrUW4HntzQ&t=828s&ab_channel=edureka%21
 
 gitclone>docker build>dockerpush>to containerregistry>Clustercreate>deploy the containerregistryimage>and expose the port to 8080 then we can see the image in browser
 app engine====>
