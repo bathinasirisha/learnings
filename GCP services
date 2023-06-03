@@ -16,3 +16,5 @@ clone>path loki veeli >gcloud app delpoy >console check versions and instances a
 
 cloud sql create database> cloudshell >show databases,create database and add data into table in cloud sql replicas are there one server got issue another server will send requests 
 https://github.com/bathinasirisha/learnings/edit/master/GCP%20services
+filestore https://www.youtube.com/watch?v=4obtgaS-lxY&t=199s&ab_channel=PitStop4Cloud
+create instance
