@@ -1,0 +1,60 @@
+Operating System
+******************************
+Linux---------------------Shellscript
+WindowsServers2016R12----Powershell
+
+Cloud
+******************************
+GCP or Aws or AzureDevops
+
+Version Control
+******************************
+Git or Gitlab or Svn or bitbucket
+
+CICD
+******************************
+Jenkins---Groovy
+
+Containerzation
+******************************
+Docker
+
+Container Orcistration tool
+*****************************
+K8s-------Yaml
+
+Configuration management
+********************************
+Ansible---Yaml
+Chef,Pupet-----Ruby
+
+Infrastructure as a code
+********************************
+Terraform---Hashicorps
+
+Packaging Tool
+***********************************
+Packer----Json
+
+Infrastructure validation tool
+***********************************
+Inspec or Serverspec----Ruby
+
+WebServer
+***********************************
+Ngnix
+
+Application Server
+***********************************
+Apache, Tomacat(warFiles)
+
+DB Server
+************************************
+MySql 
+PostgreSQl
+
+Sorage
+************************************
+Disks
+Buckets
+Filestore
