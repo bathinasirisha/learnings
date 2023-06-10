@@ -1,4 +1,4 @@
-To create VM by using this 
+<===To create VM by using this ===>
 provider "google" {
     project     ="kubernetes-382110"
     credentials =file("kubernetes-382110-506ce1526224.json")
@@ -27,7 +27,7 @@ resource "google_compute_instance" "my_instance" {
    }
  }
 }
-To create VPC subnetworks
+<==To create VPC subnetworks==>
 
 network_interface {
     network    = google_compute_network.terraform-network.self_link
@@ -47,6 +47,21 @@ resource "google_compute_network" "terraform-network" {
     region        = "us-central1"
     network       = google_compute_network.terraform-network.id
   }
+  <===To create bucket===>
+  resource "google_storage_bucket" "test_upload" {
+  name     = "bucket-siri"
+  location = "us-central1"
+  lifecycle_rule {
+  action {
+    type = "SetStorageClass"
+     storage_class = "COLDLINE"
+  }
+  condition {
+    age = 14
+  }
+}
+}
+  
   to input varibles
   
   terraform plan -var="project=kubernetes-382110" -var="credentials=kubernetes-382110-506ce1526224.json"
