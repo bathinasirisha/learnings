@@ -4,8 +4,8 @@ provider "google" {
     credentials =file("kubernetes-382110-506ce1526224.json")
     region      = "us-central1"
     zone        ="us-central1-a"
-
 }
+
 
 resource "google_compute_instance" "my_instance" {
   name         = "terraform-instance"
