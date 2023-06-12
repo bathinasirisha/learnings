@@ -20,4 +20,4 @@ filestore https://www.youtube.com/watch?v=4obtgaS-lxY&t=199s&ab_channel=PitStop4
 create instance
 
 
-create snapshot==> from snapshot to==> create image from img ==>instance template ===>instance group
+create snapshot==> from snapshot to==> create image from img ==>instance template ===>instance group without externalIP and we have to create loadbalancer with load balancer IP we can see in the browser
