@@ -18,3 +18,6 @@ cloud sql create database> cloudshell >show databases,create database and add da
 https://github.com/bathinasirisha/learnings/edit/master/GCP%20services
 filestore https://www.youtube.com/watch?v=4obtgaS-lxY&t=199s&ab_channel=PitStop4Cloud
 create instance
+
+
+create snapshot==> from snapshot to==> create image from img ==>instance template
