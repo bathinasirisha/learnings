@@ -20,4 +20,4 @@ filestore https://www.youtube.com/watch?v=4obtgaS-lxY&t=199s&ab_channel=PitStop4
 create instance
 
 
-create snapshot==> from snapshot to==> create image from img ==>instance template
+create snapshot==> from snapshot to==> create image from img ==>instance template ===>instance group
