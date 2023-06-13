@@ -11,4 +11,8 @@ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenk
  
  
  cd /var/lib/jenkins ===>default location under that cd workspace/ we can see the jobs
+ How to install jenkins by using jenkins.war file
+ Download latest jenkins.war file
+ run the command java -jar jenkins.war
+ https://www.blazemeter.com/blog/jenkins-war-file
  
