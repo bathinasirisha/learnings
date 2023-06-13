@@ -13,6 +13,9 @@ systemctl restart sshd                                 ##after changing in sshd_
 
 ssh-keygen                                             ## to generate id_rsa pub&privatekeys
 ssh-copy-id username@IPAddress                         ## to copy pubkey from source server(.ssh folder) to destination server
+cd .ssh/
+id_rsa id_rsa.pub go for pub key
+cat id_rsa.pub
 
 ssh -i /var/lib/jenkins/workspace/id_rsa -oStrictHostKeyChecking=no siri@10.128.0.4 rm -rf /usr/share/nginx/html/index.html
 scp -r -i /var/lib/jenkins/workspace/id_rsa index.html siri@10.128.0.4:/usr/share/nginx/html/
