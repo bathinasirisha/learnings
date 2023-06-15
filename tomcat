@@ -1,6 +1,7 @@
 mkdir /opt/tomcat
  cd /opt/tomcat
- wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.85/bin/apache-tomcat-8.5.85.tar.gz
+download ====>https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.88/bin/
+wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.85/bin/apache-tomcat-8.5.85.tar.gz
  gunzip apache-tomcat-8.5.88.tar.gz
  tar -xvf apache-tomcat-8.5.88.tar
  cd apache-tomcat-8.5.88/bin
