@@ -53,3 +53,9 @@ export PATH=$JAVA_HOME/bin:$PATH
 /usr/lib/jvm/java-11-openjdk-11.0.18.0.10-1.el7_9.x86_64/bin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/share/maven/bin
 [siri@jenkins ~]$ vi .bash_profile
 [siri@jenkins ~]$ sudo vi .bashrc
+
+
+
+ Nexus installation in ubuntu
+ https://www.fosstechnix.com/how-to-install-nexus-repository-on-ubuntu/
+
