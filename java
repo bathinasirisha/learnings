@@ -6,6 +6,7 @@ readlink -f $(which java) ====>To check where java installed in centos
   echo $PATH
 
 MAVEN
+ https://www.youtube.com/watch?v=t8mEwh1ZPww&list=PLbThb-_3v4iPhgSzuiaTIdFylqAXx0Dgf&index=3&ab_channel=TechFarm
 To install maven by using
 wget https://dlcdn.apache.org/maven/maven-3/3.9.0/binaries/apache-maven-3.9.0-bin.tar.gz
  tar -xfv apache-maven-3.9.0-bin.tar.gz
