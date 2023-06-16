@@ -20,9 +20,14 @@ pipeline
             stage('excute maven') {
                   steps {
                         sh 'mvn clean'
-                        sh 'mvn deploy'
+                        
                         }
                }
+            stage('Deploy to Nexus') {
+            steps {
+               sh 'mvn deploy'
+            }
+        }
             stage('restart service') {
                   steps {
                         sh  'curl admin:raosiri2806'
