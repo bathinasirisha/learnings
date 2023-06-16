@@ -1,4 +1,11 @@
- 
+mvn archetype:generate====create project structure
+mvn validate ====validate theb project structure
+mvn compile will convert .java files to .class files
+mvn test  will test .class files
+mvn package will help to create .jar ,.war, .ear
+mvn install will install the package locally
+mvn deploy it will package remotely
+
  mvn deploy -Dproject.version=4.0  ====required version we want to deploy
  
  MAVEN
