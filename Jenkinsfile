@@ -13,13 +13,14 @@ pipeline
            stage('clone')
                {
                 steps {
-                      sh 'ssh sirisha@34.28.163.80 git clone https://github.com/bathinasirisha/siri.git'
+                      sh 'ssh sirisha@34.28.163.80 git clone https://github.com/bathinasirisha/learnings.git'
                       sh 'ssh sirisha@34.28.163.80 ls -la'
                       }
                }
-            stage('application deploy to nginx') {
+            stage('excute maven') {
                   steps {
-                        sh 'ssh sirisha@34.28.163.80 sudo cp siri/index.html /var/www/html/'
+                        sh 'mvn clean'
+                        sh 'mvn deploy'
                         }
                }
             stage('restart service') {
