@@ -25,7 +25,7 @@ pipeline
                }
             stage('restart service') {
                   steps {
-                        sh 'ssh sirisha@34.28.163.80 sudo systemctl restart httpd'
+                        sh  'curl admin:raosiri2806'
                }
            }
   }
