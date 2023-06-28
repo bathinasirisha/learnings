@@ -22,21 +22,6 @@ setup.yml code=====
     - tomcat 
     - dir    
     - symlin
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 [siri@docker ansible]$ sudo ansible-galaxy init service
 - Role service was created successfully
 [siri@docker ansible]$ ls
