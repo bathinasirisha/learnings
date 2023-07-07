@@ -1,2 +1,9 @@
 git config --global user.name "bathinasirisha"
 git config --global user.email "sireesha.bathina28@gmail.com"
+echo "# Git--Example" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/bathinasirisha/Git--Example.git
+git push -u origin master
