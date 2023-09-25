@@ -12,6 +12,10 @@ vi /etc/ssh/sshd_config                                ##login user settings##
 systemctl restart sshd                                 ##after changing in sshd_config  we should restart sshd service##
 
 ssh-keygen                                             ## to generate id_rsa pub&privatekeys
+ls /home/sirisha/.ssh/
+authorized_keys  id_rsa  id_rsa.pub  known_hosts
+ cat /home/sirisha/.ssh/id_rsa.pub  ====put this pub key in anotherserver authorized keys(vim ~/.ssh/authorized_keys)
+ssh anotherserver ipTo login
 ssh-copy-id username@IPAddress                         ## to copy pubkey from source server(.ssh folder) to destination server
 cd .ssh/
 id_rsa id_rsa.pub go for pub key
