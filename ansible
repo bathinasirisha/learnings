@@ -1,6 +1,10 @@
 Installation
 sudo yum install ansible
-ansible --version    ===================>to create a playbook
+ansible --version 
+Adhoc cmds 
+ansible -i inventory  all -m "shell" -a "du"
+
+===================>to create a playbook
 Create ansible role 
 $ mkdir webap-playbook
 $ cd webap-playbook
