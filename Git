@@ -1,3 +1,5 @@
+which git to check the git path where installed
+
 git config --global user.name "bathinasirisha"
 git config --global user.email "sireesha.bathina28@gmail.com"
 echo "# Git--Example" >> README.md
