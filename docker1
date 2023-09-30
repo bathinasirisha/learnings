@@ -1,3 +1,6 @@
+how to install minikube on centos 
+https://utho.com/docs/tutorial/how-to-install-minikube-on-centos-7-and-8/
+
 sudo docker run -it --rm -d -p 8080:80 --name anyname docker-demo:latest     ###8080[inbrouser]:80[localport]
 
 
