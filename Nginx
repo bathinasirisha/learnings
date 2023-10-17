@@ -5,3 +5,9 @@ sudo systemctl status nginx
 cd nginx.conf/
 vi /usr/share/nginx/html/index.html
 use external IP in browser
+
+
+in nginx where will be the log file
+/var/log/nginx/   access.log error.log
+var/www/html   index.html page
+If we change the path of we have to configure in the here  vi /etc/nginx/nginx. conf
