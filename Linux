@@ -1,6 +1,6 @@
-Top tomshow the running process
-awk particular column we have to filter
-sed find and replace
+Top =to show the running process
+awk =particular column we have to filter
+sed =find and replace
 alias      set an alias                                                        
  apropos    display a short description of a command                            
  cal        display a monthly calendar (non-standard opt. "-w" for weeks-count) 
