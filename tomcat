@@ -1,3 +1,6 @@
+Install java
+
+
 mkdir /opt/tomcat
  cd /opt/tomcat
 download ====>https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.88/bin/
