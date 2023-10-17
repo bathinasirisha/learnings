@@ -1,3 +1,5 @@
- path of apache /var/www/html/
-conf file at etc/apache2/apache2.conf
+It is a application server we have to put application  path of apache /var/www/html/  ==index.html
+conf file at etc/apache2/apache2.conf    in conf  file we put path of app, error.log 
 
+In centos we call it  httpd 
+In ubuntu apache we can call
