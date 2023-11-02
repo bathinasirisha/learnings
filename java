@@ -12,6 +12,11 @@ wget https://dlcdn.apache.org/maven/maven-3/3.9.0/binaries/apache-maven-3.9.0-bi
  tar -xfv apache-maven-3.9.0-bin.tar.gz
  mv apache-maven-3.9.0 /usr/share/maven
  mvn -version
+  export M2_HOME=/usr/share/maven
+[sirisha@instance-1 ~]$ export PATH=$PATH:$M2_HOME/bin
+[sirisha@instance-1 ~]$ echo $M2_HOME
+/usr/share/maven
+
  [siri@jenkins ~]$ which java
 /usr/lib/jvm/java-11-openjdk-11.0.18.0.10-1.el7_9.x86_64/bin/java
 [siri@jenkins ~]$ whereis java
