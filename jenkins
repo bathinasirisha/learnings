@@ -19,4 +19,12 @@ java -jar jenkins.war
  Download latest jenkins.war file
  run the command java -jar jenkins.war
  https://www.blazemeter.com/blog/jenkins-war-file
+
+
+Multibranch pipeline
+
+From diffrent branches diiff jenkinfile we can write pipeline
+
+Plugin install  multibranch pipeline>configure jenkinsfile 
  
+webhook install plug>configure pipieline>with url in github webhooks paste url enable the webhook>>>Any change happen in git hub it will tigger the pieline 
