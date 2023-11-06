@@ -23,7 +23,7 @@ java -jar jenkins.war
 
 Multibranch pipeline
 
-From diffrent branches diiff jenkinfile we can write pipeline
+From diffrent branches diiff jenkinfile we can write pipeline at a time
 
 Plugin install  multibranch pipeline>configure jenkinsfile 
  
