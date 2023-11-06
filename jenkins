@@ -21,6 +21,13 @@ java -jar jenkins.war
  https://www.blazemeter.com/blog/jenkins-war-file
 
 
+master slave 
+masternode >>>java install jenkins install
+
+
+slavenode>>java, jenkins install
+
+
 Multibranch pipeline
 
 From diffrent branches diiff jenkinfile we can write pipeline at a time
